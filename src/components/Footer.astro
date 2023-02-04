@@ -1,0 +1,18 @@
+---
+import Social from './Social.astro'
+
+const socials = ["Twitter", "GitHub", "Website"];
+---
+<footer>
+  {socials.map((v) => {
+    return <Social platform={v.toLowerCase()} username="ega4432" />
+  })}
+</footer>
+
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
